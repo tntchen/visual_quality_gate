@@ -1,0 +1,29 @@
+# 默认统一文本换行，减少 macOS、Windows 和不同 AI 工具产生的噪声差异。
+* text=auto eol=lf
+
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.sh text eol=lf
+*.bash text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 常见二进制文件不做换行转换。
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.xlsx binary
+*.xls binary
+*.docx binary
+*.pptx binary
+*.zip binary
+*.jar binary
+*.woff binary
+*.woff2 binary

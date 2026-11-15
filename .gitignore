@@ -1,0 +1,61 @@
+# 操作系统
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+
+# 本地环境、凭据和个人配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/secrets/
+.claude/settings.local.json
+.gemini/settings.json
+.aider*
+.codex/local/
+
+# 编辑器与个人工具状态
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# JavaScript / TypeScript
+node_modules/
+dist/
+build/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Java / JVM
+.classpath
+.project
+.settings/
+target/
+*.class
+
+# 日志、临时文件和本地运行产物
+*.log
+/tmp/
+/local-data/
+/runtime-data/
+
+# 真实走查证据只能放部门批准的存储位置，不进入 Git。
+/evidence/
+/captures/
+/reports-output/
