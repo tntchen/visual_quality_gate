@@ -4,6 +4,17 @@
 
 > **当前阶段：立项准备与需求澄清。** 仓库尚无应用代码，需求基线、试点技术形态、终端条件和部署条件均未完全确认，不应直接按完整系统开工。
 
+## 远程仓库
+
+代码托管在 GitHub：<https://github.com/tntchen/visual_quality_gate>（当前为私有仓库，仅受邀协作者可见）。
+
+```bash
+git clone https://github.com/tntchen/visual_quality_gate.git   # 首次获取
+git switch main && git pull --ff-only                          # 开始工作前同步主分支
+```
+
+日常开发在自己的任务分支上进行，完成后通过 Pull Request 提交另一位开发评审合并，不直接推 `main`。任务认领、分支命名（`<type>/<short-scope>`）、提交格式（`type(scope): 简要说明`）和评审检查项统一按 [CONTRIBUTING.md](CONTRIBUTING.md) 执行，任务占用优先使用 GitHub Issue。
+
 ## 先读什么
 
 1. [项目交接文档](docs/00_Work系统开发项目交接文档.md)：当前最重要的系统边界和最小闭环建议。
@@ -51,7 +62,7 @@ AI 助手从根目录 [AGENTS.md](AGENTS.md) 开始；人类开发者同时阅�
 
 ## 协作最小规则
 
-- 使用 `main` 作为集成分支，两位开发各自使用短生命周期分支，通过合并请求交叉评审。
+- 使用 `main` 作为集成分支，两位开发各自使用短生命周期分支，通过 GitHub Pull Request 交叉评审，任务认领与分配优先使用 GitHub Issue。
 - 开始工作前先检查未提交修改；不要覆盖另一位开发或 AI 会话留下的变更。
 - 每个任务明确范围、非目标、验收和验证结果；未运行的测试不得写成已通过。
 - 需求、架构或接口发生重要变化时，同步更新原始依据、AI 项目上下文和必要的 ADR。
